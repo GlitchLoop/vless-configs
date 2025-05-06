@@ -1,0 +1,17 @@
+{
+    "v": "2",
+    "ps": "MyVLESSNode",
+    "add": "148.135.4.170",
+    "port": "31508",
+    "id": "a0e15407-347d-4cca-8802-1ce135b42975",
+    "aid": 0,
+    "net": "tcp",
+    "type": "none",
+    "host": "",
+    "path": "",
+    "tls": true,
+    "sni": "www.cloudflare.com",
+    "alpn": "",
+    "flow": ""
+  }
+  
