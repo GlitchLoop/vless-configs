@@ -1,0 +1,29 @@
+mixed-port: 7890
+allow-lan: true
+mode: Rule
+log-level: info
+
+proxies:
+  - name: "VLESS-Reality"
+    type: vless
+    server: 148.135.4.170
+    port: 31508
+    uuid: a0e15407-347d-4cca-8802-1ce135b42975
+    cipher: none
+    tls: true
+    udp: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: 3tZBPIfFPu37XD5HQkKNRPwIXHk4d1K2ZBkzI1Tvx1E
+      short-id: ""
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - VLESS-Reality
+      - DIRECT
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 节点选择
